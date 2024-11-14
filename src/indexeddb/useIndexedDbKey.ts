@@ -19,9 +19,9 @@ const useIndexedDbKey = () => {
         const encryptedKey = await db.get('keys', 'apiKey');
         if (encryptedKey) {
             const decryptedKey = CryptoJS.AES.decrypt(encryptedKey, secretPassphrase).toString(CryptoJS.enc.Utf8);
-            alert(`Decrypted API Key: ${decryptedKey}`);
+            alert(`Decrypted Key: ${decryptedKey}`);
         } else {
-            alert('No API Key found');
+            alert('No Key found');
         }
     };
 

@@ -22,6 +22,7 @@ const App: React.FC = () => {
   return (
       <div>
         <h1>API Key Storage Example</h1>
+        <h2>Current method: {method}</h2>
         <div>
           <button onClick={() => setMethod('local')}>LocalStorage</button>
           <button onClick={() => setMethod('indexed')}>IndexedDB</button>

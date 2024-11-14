@@ -11,7 +11,7 @@ const App: React.FC = () => {
                 type="text"
                 value={inputKey}
                 onChange={(e) => setInputKey(e.target.value)}
-                placeholder="Enter API Key"
+                placeholder="Enter Key"
             />
             <button onClick={() => saveKey(inputKey)}>Save Key</button>
             <button onClick={loadKey}>Load Key</button>
