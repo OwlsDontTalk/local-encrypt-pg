@@ -1,5 +1,4 @@
-const iv = window.crypto.getRandomValues(new Uint8Array(12)); // Генерация IV один раз
-
+const iv = window.crypto.getRandomValues(new Uint8Array(12));
 let cryptoKey: CryptoKey | null = null;
 
 const useWebCryptoKey = () => {
